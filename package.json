@@ -1,0 +1,23 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decclan/personal-website.git"
+  },
+  "keywords": [],
+  "author": "Decclan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Decclan/personal-website/issues"
+  },
+  "homepage": "https://github.com/Decclan/personal-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
