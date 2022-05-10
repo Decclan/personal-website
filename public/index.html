@@ -6,10 +6,9 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <title>Decclans Personal Website</title>
-    <!-- adds favicon to tab bar
-    <link rel="icon" href="./imgs/decclanlogo.png" type="image/icon type">
-    -->
+    <title>Personal Webiste</title>
+    <!-- adds favicon to tab bar -->
+    <link rel="icon" href="./imgs/rainbowflag.png" type="image/icon type">
   </head>
 
   <body class="font-Poppins">
@@ -22,13 +21,14 @@
     <header>
       <nav class="container flex items-center py-4 mt-4 sm:mt-12">
         <div class="py-1">
-          <img src="./imgs/decclanlogo.png">
+          <img src="./imgs/decclan.png">
         </div>
         <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
           <li class="cursor-pointer">About</li>
-          <li class="cursor-pointer">Portfolio</li>
+          <li class="cursor-pointer">Skills</li>
+          <!--<li class="cursor-pointer">Portfolio</li>-->
           <li class="cursor-pointer">Contact</li>
-          <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+          <!-- <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button> -->
 
         </ul>
         <div class="flex sm:hidden flex-1 justify-end">
@@ -53,9 +53,23 @@
         </div>
         <!-- Image -->
         <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-          <img src="./imgs/devices.png">
+          <img class="rounded-md w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/code.jpg">
         </div>
       </div>
+      <!--Round Rectangle-->
+      <div class="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36">
+      </div>
+    </section>
+
+    <!-- Index Midpoint -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+      <!--Header-->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
+        <p class="text-center text-bookmark-grey mt-4">Some text for the seocnd paragraph</p>
+        
+      </div>
+      
     </section>
   </body>
 </html>
