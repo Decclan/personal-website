@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Decclan Evans</title>
+        <meta name="description" content="Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/src/output.css"> <!--"/src/output.css"-->
+
+        <!--Add below to style to main output-->
+        <style>
+            .bg-image {
+                position: relative;
+                z-index: 0;
+            }
+            .bg-image::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('/assets/index-background.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                opacity: 0.3; /* Adjust the opacity here */
+                filter: blur(2px);
+                z-index: -1;
+            }
+        </style>
+    
+    </head>
+    <body class="bg-slate-600 bg-fixed bg-cover bg-center min-h-screen bg-image flex flex-col h-screen justify-between">
+        <!-- Nav Bar -->
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <a href="#" class="flex-shrink-0 flex items-center text-gray-900 text-lg font-semibold">
+                            Decclan Evans
+                        </a>
+                    </div>
+                    <div class="hidden md:flex md:space-x-8 md:items-center">
+                        <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="menu-button" class="text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div class="md:hidden" id="mobile-menu" style="display: none;">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Services</a>
+                    <a href="#" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h1 class="text-4xl font-bold text-white mb-4">Welcome to my Website</h1>
+                <p class="text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white shadow-md mt-auto static bottom-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-900 text-sm mb-4 md:mb-0">
+                        © 2024 Footer statement. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-900 hover:text-gray-700 text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-900 hover:text-gray-700 text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-900 hover:text-gray-700 text-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function() {
+                var mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.style.display === "none") {
+                    mobileMenu.style.display = "block";
+                } else {
+                    mobileMenu.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+
+
+    <!--npm run dev = rebuilds the project after modification-->
+</html>
