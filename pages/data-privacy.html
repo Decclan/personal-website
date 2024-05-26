@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Decclan Evans</title>
+        <meta name="description" content="Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/src/output.css"> <!--"/src/output.css"-->
+
+        <!--Add below to style to main output-->
+        <style>
+            .bg-image {
+                position: relative;
+                z-index: 0;
+            }
+            .bg-image::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('/assets/data-privacy-background.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                opacity: 0.5; /* Adjust the opacity here */
+                filter: blur(2px);
+                z-index: -1;
+            }
+        </style>
+    
+    </head>
+    <body class="bg-slate-600 bg-fixed bg-cover min-h-screen bg-image flex flex-col">
+        <!-- Nav Bar -->
+        <nav class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <a href="/pages/index.html" class="flex-shrink-0 flex items-center text-gray-900 text-lg font-semibold">
+                            Decclan Evans
+                        </a>
+                    </div>
+                    <div class="hidden md:flex md:space-x-8 md:items-center">
+                        <a href="/pages/index.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/pages/about.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/pages/skills.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="/pages/contact.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button id="menu-button" class="text-gray-900 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div class="md:hidden" id="mobile-menu" style="display: none;">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="/pages/index.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="/pages/about.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="/pages/skills.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                    <a href="/pages/contact.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex flex-row justify-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h1 class="text-4xl font-bold text-white mb-4">Data Privacy</h1>
+                <p class="text-lg text-white py-12">Commited to data security by adhering to UK/EU data privacy best practice ensuring your information is safe.</p>
+
+                <div class="container text-white mx-auto px-4 py-8">
+                    <h1 class="text-3xl font-bold mb-4">Privacy Policy for www.decclanevans.link</h1>
+            
+                    <p class="mb-4">Welcome to www.decclanevans.link. Your privacy is important. This privacy policy explains how personal data is collected, used, and protected in compliance with UK and EU data privacy laws, including the General Data Protection Regulation (GDPR).</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Data Controller</h2>
+                    <p class="mb-4">
+                        The data controller for www.decclanevans.link is:
+                        <br><br>
+                        <strong>Decclan Evans</strong><br>
+                        Email: <a href="mailto:contact@decclanevans.link" class="text-blue-400">contact@decclanevans.link</a>
+                    </p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Data Collection</h2>
+                    <p class="mb-4">The following personal data is collected from users:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Contact Information</strong>: Name, email address, and any other information provided when contacting directly.</li>
+                        <li><strong>Usage Data</strong>: Information about how the website is used, including IP address, browser type, and pages visited.</li>
+                    </ul>
+            
+                    <h2 class="text-2xl font-bold mb-2">Legal Basis for Processing</h2>
+                    <p class="mb-4">Personal data is processed based on the following legal grounds:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Consent</strong>: When data is provided voluntarily.</li>
+                        <li><strong>Legitimate Interests</strong>: To improve the website's performance and user experience.</li>
+                        <li><strong>Legal Obligation</strong>: To comply with legal requirements.</li>
+                    </ul>
+            
+                    <h2 class="text-2xl font-bold mb-2">Use of Data</h2>
+                    <p class="mb-4">The collected data is used for the following purposes:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>To respond to inquiries and provide customer support.</li>
+                        <li>To analyze website usage and improve the website.</li>
+                        <li>To comply with legal obligations.</li>
+                    </ul>
+            
+                    <h2 class="text-2xl font-bold mb-2">Data Sharing</h2>
+                    <p class="mb-4">Personal data is not shared with third parties except:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>When required by law.</li>
+                        <li>To protect rights and property.</li>
+                        <li>With explicit consent.</li>
+                    </ul>
+            
+                    <h2 class="text-2xl font-bold mb-2">Data Security</h2>
+                    <p class="mb-4">Appropriate technical and organizational measures are taken to protect personal data from unauthorized access, alteration, disclosure, or destruction.</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Data Retention</h2>
+                    <p class="mb-4">Personal data is retained only as long as necessary for the purposes outlined in this policy or as required by law.</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Your Rights</h2>
+                    <p class="mb-4">You have the following rights regarding your personal data:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Access</strong>: You can request access to your personal data.</li>
+                        <li><strong>Rectification</strong>: You can request correction of inaccurate or incomplete data.</li>
+                        <li><strong>Erasure</strong>: You can request deletion of your personal data.</li>
+                        <li><strong>Restriction</strong>: You can request restriction of processing under certain circumstances.</li>
+                        <li><strong>Portability</strong>: You can request to receive your data in a portable format.</li>
+                        <li><strong>Objection</strong>: You can object to the processing of your personal data.</li>
+                    </ul>
+                    <p class="mb-4">To exercise these rights, please contact <a href="mailto:contact@decclanevans.link" class="text-blue-400">contact@decclanevans.link</a>.</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Cookies</h2>
+                    <p class="mb-4">This website uses cookies to enhance your experience. For more information, please see the Cookie Policy.</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Changes to This Privacy Policy</h2>
+                    <p class="mb-4">This privacy policy may be updated from time to time. Any changes will be posted on this page with an updated revision date.</p>
+            
+                    <h2 class="text-2xl font-bold mb-2">Contact</h2>
+                    <p class="mb-4">
+                        If you have any questions or concerns about this privacy policy, please contact:
+                        <br><br>
+                        Email: <a href="mailto:contact@decclanevans.link" class="text-blue-400">contact@decclanevans.link</a>
+                    </p>
+            
+                    <p class="mb-4"><strong>Last Updated</strong>: 2024</p>
+            
+                    <p>By using this website, you consent to this privacy policy.</p>
+                </div>
+
+
+            <!--Main Policy-->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white shadow-md mt-auto">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-900 text-sm mb-4 md:mb-0">
+                        © 2024
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-900 hover:text-gray-700 text-sm">Contact</a>
+                        <a href="/pages/data-privacy.html" class="text-gray-900 hover:text-gray-700 text-sm">Data Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function() {
+                var mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.style.display === "none") {
+                    mobileMenu.style.display = "block";
+                } else {
+                    mobileMenu.style.display = "none";
+                }
+            });
+        </script>
+    </body>
+
+
+    <!--npm run dev = rebuilds the project after modification-->
+</html>
