@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css"> <!--"/src/output.css"-->
 
-        <!--Add below to style to main output-->
         <style>
             .bg-image {
                 position: relative;
@@ -25,7 +24,7 @@
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
-                opacity: 0.6; /* Adjust the opacity here */
+                opacity: 0.6;
                 filter: blur(2px);
                 z-index: -1;
             }
@@ -53,6 +52,7 @@
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -69,10 +69,26 @@
         </nav>
 
         <!-- Main Content -->
-        <main class="flex h-screen items-center">
+        <main class="flex h-screen items-start">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <h1 class="text-4xl font-bold text-white mb-4">About Me</h1>
-                <p class="text-lg text-white">Junior Developer with a passion for web based technologies.</p>
+                <h1 class="text-4xl font-bold text-white mb-4">Skills</h1>
+
+            
+
+                <div class="container text-white mx-auto px-4 py-8">
+                    <h2 class="text-2xl font-bold mb-2">Tech Stack</h2>
+                    <p class="mb-4">Built using the following technologies:</p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Tailwind CSS</strong>: Visually effective design and styling.</li>
+                        <li><strong>Javascript/Typescript</strong>: Adding functionality to any site.</li>
+                        <li><strong>Node.js</strong>: Server side handling.</li>
+                        <li><strong>Python</strong>: Scripting and general programming.</li>
+                        <li><strong>Git</strong>: Version control with remote repository.</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold mb-2">Visuals</h2>
+                    <p class="mb-4">Copyright free A.I generated images.</p>
+                </div>
             </div>
         </main>
 
