@@ -6,7 +6,7 @@
         <title>Decclan Evans</title>
         <meta name="description" content="Personal Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/src/output.css"> <!--"/src/output.css"-->
+        <link rel="stylesheet" href="./styles.css"> <!--"/src/output.css"-->
 
         <!--Add below to style to main output-->
         <style>
@@ -25,7 +25,7 @@
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
-                opacity: 0.5; /* Adjust the opacity here */
+                opacity: 0.6; /* Adjust the opacity here */
                 filter: blur(2px);
                 z-index: -1;
             }
@@ -53,6 +53,7 @@
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -159,20 +160,30 @@
 
         </main>
 
-        <!-- Footer -->
-        <footer class="bg-white shadow-md mt-auto">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="text-gray-900 text-sm mb-4 md:mb-0">
-                        © 2024
-                    </div>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-900 hover:text-gray-700 text-sm">Contact</a>
-                        <a href="/pages/data-privacy.html" class="text-gray-900 hover:text-gray-700 text-sm">Data Privacy</a>
-                    </div>
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm mb-4 md:mb-0">
+                    © 2024
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/decclan-evans" target="_blank">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="color: rgb(98, 98, 98);">
+                            <path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.5 20h-3v-11h3v11zm-1.5-12.271c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.271h-3v-5.604c0-1.336-.025-3.054-1.863-3.054-1.864 0-2.15 1.454-2.15 2.955v5.703h-3v-11h2.881v1.507h.041c.402-.763 1.379-1.565 2.837-1.565 3.032 0 3.593 1.996 3.593 4.591v6.467z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Decclan" target="_blank">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="color: rgb(98, 98, 98);">
+                            <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.15c-3.338.727-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.806 1.305 3.492.998.108-.775.42-1.306.762-1.606-2.665-.305-5.466-1.333-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.403 11.52 11.52 0 013.003.403c2.292-1.553 3.3-1.23 3.3-1.23.653 1.653.24 2.874.117 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.478 5.92.43.37.823 1.1.823 2.22v3.293c0 .32.217.694.825.577C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900 text-sm">Contact</a>
+                    <a href="/pages/data-privacy.html" class="text-gray-700 hover:text-gray-900 text-sm">Data Privacy</a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
         <script>
             document.getElementById('menu-button').addEventListener('click', function() {
