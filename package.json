@@ -12,5 +12,10 @@
     "devDependencies": {
         "tailwindcss": "^3.4.3",
         "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "nodemailer": "^6.9.13",
+        "path": "^0.12.7"
     }
 }
