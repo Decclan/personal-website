@@ -3,6 +3,7 @@ var http = require('http');
 var path = require('path');
 var nodemailer = require('nodemailer');
 
+//Server for testing
 var app = express();
 var server = http.Server(app);
 var port = 500;
@@ -36,7 +37,7 @@ app.post("/send_email", function(req, response)
             pass: "pbet rywd mqyl cphk"
         }
     })
-
+    //Formats email
     var mailOptions = 
     {
         from: from,
