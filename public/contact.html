@@ -44,7 +44,7 @@
                     <div class="hidden md:flex md:space-x-8 md:items-center">
                         <a href="/public/index.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
                         <a href="/public/about.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="/public/skills.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="/public/projects.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                         <!-- <a href="/public/contact.html" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a> -->
                     </div>
                     <div class="md:hidden flex items-center">
@@ -62,7 +62,7 @@
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <a href="/public/index.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Home</a>
                     <a href="/public/about.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">About</a>
-                    <a href="/public/skills.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                    <a href="/public/projects.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Projects</a>
                     <!-- <a href="/public/contact.html" class="block text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-base font-medium">Contact</a> -->
                 </div>
             </div>
@@ -129,19 +129,20 @@
                 </div>
             </div>
         </footer>
-
-        <script>
-            document.getElementById('menu-button').addEventListener('click', function() {
-                var mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenu.style.display === "none") {
-                    mobileMenu.style.display = "block";
-                } else {
-                    mobileMenu.style.display = "none";
-                }
-            });
-        </script>
     </body>
-
-
-    <!--npm run dev = rebuilds the project after modification-->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.style.display === "none") {
+                mobileMenu.style.display = "block";
+            } else {
+                mobileMenu.style.display = "none";
+            }
+        });
+        // Prevent bg-image from moving on mobile - fixed pos not always supported
+        document.addEventListener('scroll', () => {
+            const bgImage = document.querySelector('.bg-image');
+            bgImage.style.transform = `translateY(${window.scrollY}px)`;
+        });
+    </script>
 </html>
