@@ -23,18 +23,18 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-image: url('/assets/about-background.png');
+                background-image: url('/assets/projects-background.png');
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
-                opacity: 0.6;
+                opacity: 0.5;
                 filter: blur(2px);
                 z-index: -1;
             }
         </style>
     </head>
 
-    <body class="bg-slate-600 bg-fixed bg-cover bg-center min-h-screen bg-image flex flex-col justify-between">
+    <body class="bg-slate-700 bg-fixed bg-cover bg-center min-h-screen bg-image flex flex-col justify-between">
         <!-- Nav Bar -->
         <nav class="bg-white shadow-md">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -158,14 +158,14 @@
                     <h2 class="text-1xl sm:text-2xl font-bold mb-2">Github Projects:</h2>
                     <p class="text-sm sm:text-base mb-4">Available public repositories:</p>
                     <ul class="list-disc list-inside mb-4">
-                        <li class="text-sm sm:text-base mb-4"><strong>Network Validation Program</strong>: Built a python program with a tkinter GUI in order to run network validation tests.</li>
+                        <li class="text-sm sm:text-base mb-4"><strong>Network Validation Program</strong>: Built a python program with a GUI in order to run network validation tests.</li>
                         <li class="text-sm sm:text-base mb-4"><strong>Stock Take Form Generator</strong>: Created a script using python to generate formatted .docx stock take forms based on the current database inventory CSV export.</li>
                         <li class="text-sm sm:text-base mb-4"><strong>Task Manager</strong>: Admin/user based task management system that outputs an overview of tasks assigned, completed or not completed along with assigned dates and due dates.</li>
-                        <li class="text-sm sm:text-base mb-4"><strong>Holiday Planner</strong>: Plans the total cost of the users holiday based on the choices provided from a dictionary. Icludes input validation and converts accented characters to unicode.</li>
+                        <li class="text-sm sm:text-base mb-4"><strong>Holiday Planner</strong>: Plans the total cost of the users holiday based on the choices provided from a dictionary. Includes input validation and converts accented characters to unicode.</li>
                         <li class="text-sm sm:text-base mb-4"><strong>Student Register</strong>: Admin script that adds students by I.D with number format ammendment. Outputs a .txt attendance form.</li>
                         <li class="text-sm sm:text-base mb-4"><strong>Terraform</strong>: Developed terraform scripts to quickly deploy projects to the cloud.</li>
                         <li class="text-sm sm:text-base mb-4"><strong>PixiJS</strong>: Completed a match 3 game in Javascript utilising the PixiJS engine.</li>
-                        <li class="text-sm sm:text-base mb-4"><strong>Modding</strong>: Published a minecraft mod written in Java, various pygame tests with current Godot projects underway.</li>
+                        <li class="text-sm sm:text-base mb-4"><strong>Modding</strong>: Published a minecraft mod written in Java using the Eclipse IDE.</li>
                     </ul>
                 </div>
             
@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="container mx-auto px-4 py-8">
-                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8 justify-center">
                         <!-- Project Box 1 -->
                         <a href="https://github.com/Decclan/stock-take-docx-generator" title="Project 1" target="_blank" class="bg-white rounded-lg shadow-lg overflow-hidden w-full">
                             <img src="/assets/example-form.png" alt="Project 1" class="w-full h-40 object-cover">
@@ -195,7 +195,6 @@
                                 <p class="text-gray-600 text-sm">Python scripting that takes Microsoft Access Database CSV data and generates stock take forms. Reduced manual entry, increased accuracy and saved time.</p>
                             </div>
                         </a>
-            
                         <!-- Project Box 2 -->
                         <a href="https://www.curseforge.com/minecraft/mc-mods/nether-hexed-kingdom" title="Project 2" target="_blank" class="bg-white rounded-lg shadow-lg overflow-hidden w-full">
                             <img src="/assets/mod-preview.png" alt="Project 2" class="w-full h-40 object-cover">
@@ -212,15 +211,25 @@
                                 <p class="text-gray-600 text-sm">Using Godot to build various projects to enhance development skills.</p>
                             </div>
                         </a>
-            
+                    </div>
+
+                    <div class="py-6 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-68 md:px-0 lg:px-28 xl:px-60 xl:gap-16 justify-center">
                         <!-- Project Box 4 -->
-                        <!-- <a href="https://example.com/project4" title="Project 4" target="_blank" class="bg-white rounded-lg shadow-lg overflow-hidden w-full">
-                            <img src="https://via.placeholder.com/400x300" alt="Project 4" class="w-full h-40 object-cover">
+                        <a href="https://github.com/Decclan/network-validation-program" title="Project 4" target="_blank" class="bg-white rounded-lg shadow-lg overflow-hidden w-full">
+                            <img src="/assets/bandwidth-test-app-preview.png" alt="Project 4" class="w-full h-40 object-cover">
                             <div class="p-4">
-                                <h3 class="text-md font-semibold mb-2">Project Title 4</h3>
-                                <p class="text-gray-600 text-sm">This is a brief description of the project. It highlights the key aspects and provides a short overview of what the project is about.</p>
+                                <h3 class="text-md font-semibold mb-2">Network Validation Program</h3>
+                                <p class="text-gray-600 text-sm">Developed to ensure networking devices meet industry standards relevant to clients. Uses Iperf3 to send UDP traffic in order to monitor performance. Live logging to GUI and records for .txt and .csv exports.</p>
                             </div>
-                        </a> -->
+                        </a>
+                        <!-- Project Box 5 -->
+                        <a href="https://github.com/Decclan/pixi-matchgame" title="Project 5" target="_blank" class="bg-white rounded-lg shadow-lg overflow-hidden w-full">
+                            <img src="/assets/pixi-match-game-preview.png" alt="Project 5" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-md font-semibold mb-2">PixiJS Match 3 Game</h3>
+                                <p class="text-gray-600 text-sm">Tutorial project from GameDev.Land, full Javascript project using the Pixi engine.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -260,11 +269,6 @@
             } else {
                 mobileMenu.style.display = "none";
             }
-        });
-        // Prevent bg-image from moving on mobile - fixed pos not always supported
-        document.addEventListener('scroll', () => {
-            const bgImage = document.querySelector('.bg-image');
-            bgImage.style.transform = `translateY(${window.scrollY}px)`;
         });
     </script>
 </html>

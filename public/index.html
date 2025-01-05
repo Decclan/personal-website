@@ -21,18 +21,18 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-image: url('/assets/about-background.png');
+                background-image: url('/assets/index-background.png');
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
-                opacity: 0.6;
+                opacity: 0.5;
                 filter: blur(2px);
                 z-index: -1;
             }
         </style>
     
     </head>
-    <body class="bg-slate-600 bg-fixed bg-cover bg-center min-h-screen bg-image flex flex-col h-screen justify-between">
+    <body class="bg-slate-700 bg-fixed bg-cover bg-center min-h-screen bg-image flex flex-col h-screen justify-between">
         <!-- Nav Bar -->
         <nav class="bg-white shadow-md">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -119,10 +119,5 @@
                 header.classList.add('opacity-100');
             }, 300); // Delay of 300ms
         };
-        // Prevent bg-image from moving on mobile - fixed pos not always supported
-        document.addEventListener('scroll', () => {
-            const bgImage = document.querySelector('.bg-image');
-            bgImage.style.transform = `translateY(${window.scrollY}px)`;
-        });
     </script>
 </html>
